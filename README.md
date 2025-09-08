@@ -23,8 +23,6 @@ quote-api/
 ├── server.js           # Main application code
 ├── server.test.js      # Unit tests
 ├── package.json        # Dependencies and scripts
-├── Procfile            # Heroku deployment config
-├── vercel.json         # Vercel deployment config
 ├── README.md           # This documentation
 ```
 
@@ -115,62 +113,6 @@ This will:
 - **Swagger documentation**: Available at `/api-docs`
 
 You can adjust the rate limit by editing the `limiter` configuration in `server.js`.
-
----
-
-## 📥 Deployment
-
-### ✅ Heroku
-
-1. Install Heroku CLI.
-2. Create a new app:
-
-   ```bash
-   heroku create
-   ```
-
-3. Deploy the app:
-
-   ```bash
-   git push heroku main
-   ```
-
-4. Open the deployed app:
-
-   ```bash
-   heroku open
-   ```
-
----
-
-### ✅ Vercel
-
-1. Install Vercel CLI:
-
-   ```bash
-   npm install -g vercel
-   ```
-
-2. Deploy the project:
-
-   ```bash
-   vercel
-   ```
-
-3. Follow the prompts to deploy and view the live URL.
-
----
-
-## 📜 Example curl Commands
-
-```bash
-# Get a quote
-curl http://localhost:3000/api/quote
-
-# Repeat up to 5 times, then:
-curl http://localhost:3000/api/quote
-# Response: rate limit exceeded message
-```
 
 ---
 
