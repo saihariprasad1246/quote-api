@@ -126,11 +126,7 @@ You can adjust the rate limit by editing the `limiter` configuration in `server.
 
 ---
 
-## 📂 License
 
-MIT License.
-
----
 
 ## 📬 Contact
 
